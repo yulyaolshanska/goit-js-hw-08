@@ -35,8 +35,8 @@ function populateTextArea() {
     const parsedsavedMasseg = JSON.parse(savedMasseg)
     
     if (savedMasseg) {
-        refs.form.elements.message.value = parsedsavedMasseg.message;
-        refs.form.elements.email.value = parsedsavedMasseg.email;
+        refs.form.elements.message.value = parsedsavedMasseg.message || "";
+        refs.form.elements.email.value = parsedsavedMasseg.email || "";
 
     }
 }
